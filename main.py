@@ -6,10 +6,11 @@ import webbrowser
 class CerberusSuite:
     def __init__(self):
         self.version = "2.0.0"
-        # ECCO IL TUO NUOVO INDIRIZZO GITHUB:
+        # Link alla tua repository
         self.github_url = "https://github.com/Deadpool2482/Cerberus-Security-Suite.bat"
 
     def banner(self):
+        # Pulisce lo schermo
         os.system('cls' if os.name == 'nt' else 'clear')
         print("=" * 50)
         print(f"   CERBERUS SECURITY SUITE - v{self.version}")
@@ -20,6 +21,7 @@ class CerberusSuite:
     def open_github(self):
         print(f"[*] Apertura repository GitHub...")
         time.sleep(1)
+        # Apre il browser
         webbrowser.open(self.github_url)
         print("[+] Pagina aperta nel browser!")
         time.sleep(1)
@@ -32,6 +34,7 @@ class CerberusSuite:
             print("3. Controlla Aggiornamenti (GitHub)")
             print("0. Esci")
             print("-" * 30)
+            
             choice = input("Cosa vuoi fare? > ")
             
             if choice == "1":
